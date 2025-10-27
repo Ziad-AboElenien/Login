@@ -1,0 +1,77 @@
+html
+{
+    --main-bg-color:#24353f ;
+    --main-font:rgb(23, 162, 184);
+}
+
+body
+{
+    background-color: var(--main-bg-color);
+    color: white;
+
+}
+
+.mc{
+    color: var(--main-font);
+}
+
+.mf
+{
+    font-family: "Titillium Web", sans-serif;
+}
+
+.w-40
+{
+    width: 40%;
+}
+
+button,
+a.login
+{
+    border: solid var(--main-font) 1px ;
+    background-color: transparent;
+}
+button:hover ,
+a.login:hover
+{
+    color: white ;
+    background-color: var(--main-font);
+}
+
+a.login 
+{
+    text-decoration: none;
+    
+}
+
+input::placeholder
+{
+    color: white !important;
+}
+
+div a.login-a ,
+a.regis-a
+{
+    text-decoration: none;
+}
+
+div a.login-a:hover
+,a.regis-a:hover
+{
+    text-decoration: underline;
+}
+
+
+
+
+a.log
+{
+    border:solid 2px #2858dc91;
+    text-decoration: none;
+    border-radius: 10px;
+}
+
+a.log:hover
+{
+    background-color: #2858dc91;
+}
