@@ -106,7 +106,7 @@ function search() {
 
 }
 
-if (loginBox) {
+if (loginButton) {
     loginButton.addEventListener("click", function () {
         if (loginValidation()) {
             if (search()) {
@@ -123,7 +123,7 @@ if (loginBox) {
 }
 
 var signUpLink = document.querySelector("a.login-a")
-if (loginBox) {
+if (signUpLink) {
     signUpLink.addEventListener("click", function () {
         signUpLink.href = "./register.html"
     })
