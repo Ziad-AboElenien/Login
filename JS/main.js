@@ -9,12 +9,19 @@ if (box) {
 }
 
 // intalze array to store all users
-var allUsers = [];
+var allUsers = loadUsers();
 
-// restore old data 
-if (localStorage.getItem("myUsers")) {
-    allUsers = JSON.parse(localStorage.getItem("myUsers"));
+
+
+// function to get users
+function loadUsers()
+{
+    var storedUsers = localStorage.getItem("myUsers")
+    if (storedUsers === null) return [];
+    else return JSON.parse(storedUsers) ; 
 }
+
+
 
 
 
@@ -87,9 +94,6 @@ var currentUser;
 var state = false;
 // search function
 function search() {
-    // get the last update to search corecctly before adding
-    allUsers = JSON.parse(localStorage.getItem("myUsers"));
-
     for (var i = 0; i < allUsers.length; i++)
 
     // check the equality of usermail and password to know exist or not
